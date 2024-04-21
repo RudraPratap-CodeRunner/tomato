@@ -39,6 +39,7 @@
 }
 .navbar ul li:hover{
     cursor: pointer;
+   
 }
 .navbar-search-icon{
     position: relative;
