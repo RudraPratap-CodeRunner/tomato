@@ -147,8 +147,34 @@ position: relative;
         display: none;
     }
 }
-@media (max-width:400px){
+@media (max-width:370px){
     .navbar .logo{
-        width: 50px;
+        width: 90px;
+    }
+    .navbar-right{
+        gap: 15px;
+    }
+    .navbar button{
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    .navbar-right img{
+        width: 18px;
+    }
+}
+
+@media (max-width:340px){
+    .navbar .logo{
+        width: 80px;
+    }
+    .navbar-right{
+        gap: 12px;
+    }
+    .navbar button{
+        font-size: 15px;
+        padding: 3px 15px;
+    }
+    .navbar-right img{
+        width: 18px;
     }
 }
