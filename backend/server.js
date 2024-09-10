@@ -6,6 +6,7 @@ import foodRouter from "./routes/foodRoute.js"
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
+import axios from axios
 
 
 const app = express()
@@ -36,7 +37,7 @@ app.listen(port, () => console.log(`Server started on http://localhost:${port}`)
 const apiCallInterval = 12 * 60 * 1000; // 12 minutes in milliseconds
 
 function makeApiCall() {
-  axios.get("https://nextcartserver-it17.onrender.com/api/admin/products/all")
+  axios.get("https://food-del-backend-8cm9.onrender.com")
     .then(response => {
       console.log("API call successful");
     })
