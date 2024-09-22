@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 const LoginPopup = ({ setShowLogin }) => {
 
     const { setToken, url,loadCartData } = useContext(StoreContext)
-    const [currState, setCurrState] = useState("Sign Up");
+    const [currState, setCurrState] = useState("Login");
 
     const [data, setData] = useState({
         name: "",
